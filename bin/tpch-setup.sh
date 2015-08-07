@@ -66,7 +66,7 @@ LOAD_TEXT_CMD="hive -i $BENCH_HOME/$BENCHMARK/conf/load-flat.sql -f $BENCH_HOME/
 runcommand "$LOAD_TEXT_CMD"
 
 # Initialize log file for data loading times
-LOG_FILE_EXEC_TIMES="${BENCH_HOME}/${BENCHMARK}/load_times.csv"
+LOG_FILE_EXEC_TIMES="${BENCH_HOME}/${BENCHMARK}/logs/load_times.csv"
 if [ ! -e "$LOG_FILE_EXEC_TIMES" ]
   then
     touch "$LOG_FILE_EXEC_TIMES"
@@ -108,7 +108,10 @@ do
 	DURATION="$(($DIFF_s / 3600 ))h $((($DIFF_s % 3600) / 60))m $(($DIFF_s % 60))s"
 	# log the times in load_time.csv file
 	echo "${STARTDATE_EPOCH}|${STOPDATE_EPOCH}|${DIFF_ms}|${STARTDATE}|${STOPDATE}|${DURATION}|${BENCHMARK}|${DATABASE}|${SCALE}|${FILE_FORMAT}|${t}" >> ${LOG_FILE_EXEC_TIMES}
-
+	
+	# get table information
+	hive -e "use ${DATABASE}; describe formatted ${t};exit;" > ${BENCH_HOME}/${BENCHMARK}/logs/${t}_info.log 2>&1
+	
 	i=`expr $i + 1`
 done
 
