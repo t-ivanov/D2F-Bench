@@ -1,4 +1,3 @@
-use tpch_flat_orc_2;
 select
 	l_returnflag,
 	l_linestatus,

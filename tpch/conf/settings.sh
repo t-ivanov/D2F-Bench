@@ -2,13 +2,6 @@
 
 # TPC-H
 
-# The url of git repo
-#REPO_URL="https://github.com/yhuai/tpch-kit.git"
-# The path to data gen
-#DBGEN_TOOL_DIR="tpch-kit/dbgen"
-# Compiling command
-#COMPILE_CMD="make"
-
 # Name of the benchmark
 BENCHMARK=tpch
 
@@ -30,6 +23,13 @@ FILE_FORMAT=orc
 
 # Name of the database in Metastore
 DATABASE=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf
+
+# Number of queries to execute in TPC-H --> 22 for all, or space separated list
+NUM_QUERIES=22
+
+# Ths ssh options
+#SSH_OPTS="-o StrictHostKeyChecking=no -o ServerAliveInterval=30"
+#SSH="ssh ${SSH_OPTS}"
 
 # The root directory of external tables
 #EXTERNAL_DIR="/apps/hive"
