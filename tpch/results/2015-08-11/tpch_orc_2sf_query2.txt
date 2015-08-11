@@ -1,0 +1,427 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/etc/hive/2.3.0.0-2557/0/hive-log4j.properties
+OK
+Time taken: 1.202 seconds
+OK
+Time taken: 5.547 seconds
+OK
+Time taken: 2.08 seconds
+Warning: Map Join MAPJOIN[136][bigTable=?] in task 'Stage-32:MAPRED' is a cross product
+Query ID = root_20150811185558_7bec8244-3a9f-4cb4-9fb1-a6f460f86b7b
+Total jobs = 10
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20150811185558_7bec8244-3a9f-4cb4-9fb1-a6f460f86b7b.log
+2015-08-11 18:56:07	Starting to launch local task to process map join;	maximum memory = 255328256
+2015-08-11 18:56:08	Processing rows:	200000	Hashtable size:	199999	Memory usage:	42471024	percentage:	0.166
+2015-08-11 18:56:08	Processing rows:	300000	Hashtable size:	299999	Memory usage:	52757216	percentage:	0.207
+2015-08-11 18:56:09	Processing rows:	400000	Hashtable size:	399999	Memory usage:	61784792	percentage:	0.242
+2015-08-11 18:56:09	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile21--.hashtable
+2015-08-11 18:56:09	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile21--.hashtable (278 bytes)
+2015-08-11 18:56:09	Dump the side-table for tag: 1 with group count: 25 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile31--.hashtable
+2015-08-11 18:56:09	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile31--.hashtable (763 bytes)
+2015-08-11 18:56:09	Dump the side-table for tag: 1 with group count: 20000 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile41--.hashtable
+2015-08-11 18:56:09	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile41--.hashtable (442026 bytes)
+2015-08-11 18:56:09	Dump the side-table for tag: 0 with group count: 400000 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile50--.hashtable
+2015-08-11 18:56:09	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10018/HashTable-Stage-5/MapJoin-mapfile50--.hashtable (8375036 bytes)
+2015-08-11 18:56:09	End of local task; Time Taken: 2.336 sec.
+Execution completed successfully
+MapredLocal task succeeded
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20150811185558_7bec8244-3a9f-4cb4-9fb1-a6f460f86b7b.log
+2015-08-11 18:56:13	Starting to launch local task to process map join;	maximum memory = 255328256
+2015-08-11 18:56:15	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10026/HashTable-Stage-32/MapJoin-mapfile101--.hashtable
+2015-08-11 18:56:15	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10026/HashTable-Stage-32/MapJoin-mapfile101--.hashtable (2841842 bytes)
+2015-08-11 18:56:15	End of local task; Time Taken: 1.691 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 10
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1439319108807_0005, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0005/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0005
+Hadoop job information for Stage-5: number of mappers: 1; number of reducers: 1
+2015-08-11 18:56:22,234 Stage-5 map = 0%,  reduce = 0%
+2015-08-11 18:56:35,926 Stage-5 map = 33%,  reduce = 0%, Cumulative CPU 10.61 sec
+2015-08-11 18:56:36,967 Stage-5 map = 100%,  reduce = 0%, Cumulative CPU 12.06 sec
+2015-08-11 18:56:44,301 Stage-5 map = 100%,  reduce = 100%, Cumulative CPU 16.47 sec
+MapReduce Total cumulative CPU time: 16 seconds 470 msec
+Ended Job = job_1439319108807_0005
+Launching Job 2 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1439319108807_0006, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0006/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0006
+Hadoop job information for Stage-32: number of mappers: 1; number of reducers: 0
+2015-08-11 18:56:51,954 Stage-32 map = 0%,  reduce = 0%
+2015-08-11 18:57:52,733 Stage-32 map = 0%,  reduce = 0%, Cumulative CPU 70.28 sec
+2015-08-11 18:58:54,662 Stage-32 map = 0%,  reduce = 0%, Cumulative CPU 132.99 sec
+2015-08-11 18:59:55,147 Stage-32 map = 0%,  reduce = 0%, Cumulative CPU 169.8 sec
+2015-08-11 19:00:56,058 Stage-32 map = 0%,  reduce = 0%, Cumulative CPU 195.8 sec
+2015-08-11 19:01:08,806 Stage-32 map = 100%,  reduce = 0%, Cumulative CPU 207.33 sec
+MapReduce Total cumulative CPU time: 3 minutes 27 seconds 330 msec
+Ended Job = job_1439319108807_0006
+Stage-37 is filtered out by condition resolver.
+Stage-38 is filtered out by condition resolver.
+Stage-13 is selected by condition resolver.
+Launching Job 3 out of 10
+Number of reduce tasks not specified. Estimated from input data size: 94
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1439319108807_0007, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0007/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0007
+Hadoop job information for Stage-13: number of mappers: 25; number of reducers: 94
+2015-08-11 19:01:14,870 Stage-13 map = 0%,  reduce = 0%
+2015-08-11 19:02:14,905 Stage-13 map = 0%,  reduce = 0%, Cumulative CPU 58.06 sec
+2015-08-11 19:02:17,067 Stage-13 map = 3%,  reduce = 0%, Cumulative CPU 63.73 sec
+2015-08-11 19:02:18,171 Stage-13 map = 4%,  reduce = 0%, Cumulative CPU 69.16 sec
+2015-08-11 19:02:20,267 Stage-13 map = 8%,  reduce = 0%, Cumulative CPU 76.07 sec
+2015-08-11 19:02:21,305 Stage-13 map = 9%,  reduce = 0%, Cumulative CPU 79.35 sec
+2015-08-11 19:02:24,454 Stage-13 map = 11%,  reduce = 0%, Cumulative CPU 86.95 sec
+2015-08-11 19:02:29,657 Stage-13 map = 13%,  reduce = 0%, Cumulative CPU 100.43 sec
+2015-08-11 19:02:42,475 Stage-13 map = 15%,  reduce = 0%, Cumulative CPU 118.57 sec
+2015-08-11 19:02:45,686 Stage-13 map = 19%,  reduce = 0%, Cumulative CPU 121.41 sec
+2015-08-11 19:02:48,810 Stage-13 map = 20%,  reduce = 0%, Cumulative CPU 127.28 sec
+2015-08-11 19:02:53,222 Stage-13 map = 23%,  reduce = 0%, Cumulative CPU 132.96 sec
+2015-08-11 19:02:57,055 Stage-13 map = 24%,  reduce = 0%, Cumulative CPU 135.88 sec
+2015-08-11 19:02:59,174 Stage-13 map = 26%,  reduce = 0%, Cumulative CPU 137.22 sec
+2015-08-11 19:03:02,288 Stage-13 map = 27%,  reduce = 0%, Cumulative CPU 146.06 sec
+2015-08-11 19:03:05,404 Stage-13 map = 28%,  reduce = 0%, Cumulative CPU 148.49 sec
+2015-08-11 19:03:08,504 Stage-13 map = 29%,  reduce = 0%, Cumulative CPU 150.67 sec
+2015-08-11 19:03:17,325 Stage-13 map = 30%,  reduce = 0%, Cumulative CPU 160.19 sec
+2015-08-11 19:03:28,119 Stage-13 map = 31%,  reduce = 0%, Cumulative CPU 167.1 sec
+2015-08-11 19:03:38,642 Stage-13 map = 32%,  reduce = 0%, Cumulative CPU 178.29 sec
+2015-08-11 19:03:59,182 Stage-13 map = 35%,  reduce = 0%, Cumulative CPU 207.13 sec
+2015-08-11 19:04:01,248 Stage-13 map = 36%,  reduce = 0%, Cumulative CPU 210.2 sec
+2015-08-11 19:04:05,412 Stage-13 map = 39%,  reduce = 0%, Cumulative CPU 215.77 sec
+2015-08-11 19:04:15,814 Stage-13 map = 40%,  reduce = 0%, Cumulative CPU 229.56 sec
+2015-08-11 19:04:19,365 Stage-13 map = 42%,  reduce = 0%, Cumulative CPU 236.3 sec
+2015-08-11 19:04:25,739 Stage-13 map = 44%,  reduce = 0%, Cumulative CPU 242.91 sec
+2015-08-11 19:04:28,957 Stage-13 map = 45%,  reduce = 0%, Cumulative CPU 245.73 sec
+2015-08-11 19:04:35,047 Stage-13 map = 47%,  reduce = 0%, Cumulative CPU 253.3 sec
+2015-08-11 19:04:40,372 Stage-13 map = 49%,  reduce = 0%, Cumulative CPU 262.83 sec
+2015-08-11 19:04:43,484 Stage-13 map = 50%,  reduce = 0%, Cumulative CPU 266.22 sec
+2015-08-11 19:04:47,692 Stage-13 map = 51%,  reduce = 0%, Cumulative CPU 272.24 sec
+2015-08-11 19:04:57,136 Stage-13 map = 51%,  reduce = 1%, Cumulative CPU 279.9 sec
+2015-08-11 19:04:59,803 Stage-13 map = 53%,  reduce = 1%, Cumulative CPU 286.32 sec
+2015-08-11 19:05:03,809 Stage-13 map = 55%,  reduce = 1%, Cumulative CPU 290.66 sec
+2015-08-11 19:05:07,988 Stage-13 map = 56%,  reduce = 1%, Cumulative CPU 293.45 sec
+2015-08-11 19:05:09,064 Stage-13 map = 57%,  reduce = 1%, Cumulative CPU 295.12 sec
+2015-08-11 19:05:14,384 Stage-13 map = 59%,  reduce = 1%, Cumulative CPU 307.84 sec
+2015-08-11 19:05:27,873 Stage-13 map = 61%,  reduce = 1%, Cumulative CPU 330.09 sec
+2015-08-11 19:05:31,047 Stage-13 map = 62%,  reduce = 1%, Cumulative CPU 338.21 sec
+2015-08-11 19:05:32,088 Stage-13 map = 63%,  reduce = 1%, Cumulative CPU 339.04 sec
+2015-08-11 19:05:33,196 Stage-13 map = 64%,  reduce = 1%, Cumulative CPU 341.2 sec
+2015-08-11 19:05:36,489 Stage-13 map = 66%,  reduce = 1%, Cumulative CPU 345.89 sec
+2015-08-11 19:05:39,693 Stage-13 map = 68%,  reduce = 1%, Cumulative CPU 350.28 sec
+2015-08-11 19:05:45,979 Stage-13 map = 69%,  reduce = 1%, Cumulative CPU 359.33 sec
+2015-08-11 19:05:55,410 Stage-13 map = 71%,  reduce = 1%, Cumulative CPU 373.1 sec
+2015-08-11 19:05:58,556 Stage-13 map = 72%,  reduce = 1%, Cumulative CPU 380.6 sec
+2015-08-11 19:06:00,662 Stage-13 map = 75%,  reduce = 1%, Cumulative CPU 387.0 sec
+2015-08-11 19:06:10,064 Stage-13 map = 76%,  reduce = 1%, Cumulative CPU 408.75 sec
+2015-08-11 19:06:12,195 Stage-13 map = 78%,  reduce = 1%, Cumulative CPU 413.42 sec
+2015-08-11 19:06:13,229 Stage-13 map = 79%,  reduce = 1%, Cumulative CPU 417.83 sec
+2015-08-11 19:06:15,302 Stage-13 map = 82%,  reduce = 1%, Cumulative CPU 424.16 sec
+2015-08-11 19:06:16,345 Stage-13 map = 83%,  reduce = 1%, Cumulative CPU 426.99 sec
+2015-08-11 19:06:29,266 Stage-13 map = 84%,  reduce = 1%, Cumulative CPU 434.85 sec
+2015-08-11 19:06:31,248 Stage-13 map = 85%,  reduce = 1%, Cumulative CPU 439.55 sec
+2015-08-11 19:06:35,574 Stage-13 map = 87%,  reduce = 1%, Cumulative CPU 449.78 sec
+2015-08-11 19:06:38,810 Stage-13 map = 89%,  reduce = 1%, Cumulative CPU 456.71 sec
+2015-08-11 19:06:42,000 Stage-13 map = 91%,  reduce = 1%, Cumulative CPU 459.52 sec
+2015-08-11 19:06:45,286 Stage-13 map = 93%,  reduce = 1%, Cumulative CPU 463.03 sec
+2015-08-11 19:06:53,875 Stage-13 map = 93%,  reduce = 2%, Cumulative CPU 471.92 sec
+2015-08-11 19:06:57,011 Stage-13 map = 99%,  reduce = 2%, Cumulative CPU 479.71 sec
+2015-08-11 19:07:00,167 Stage-13 map = 100%,  reduce = 2%, Cumulative CPU 483.1 sec
+2015-08-11 19:07:03,379 Stage-13 map = 100%,  reduce = 4%, Cumulative CPU 489.51 sec
+2015-08-11 19:07:08,850 Stage-13 map = 100%,  reduce = 5%, Cumulative CPU 500.58 sec
+2015-08-11 19:07:09,937 Stage-13 map = 100%,  reduce = 6%, Cumulative CPU 506.64 sec
+2015-08-11 19:07:12,045 Stage-13 map = 100%,  reduce = 7%, Cumulative CPU 512.56 sec
+2015-08-11 19:07:17,524 Stage-13 map = 100%,  reduce = 8%, Cumulative CPU 517.91 sec
+2015-08-11 19:07:21,884 Stage-13 map = 100%,  reduce = 9%, Cumulative CPU 519.76 sec
+2015-08-11 19:07:25,207 Stage-13 map = 100%,  reduce = 10%, Cumulative CPU 524.25 sec
+2015-08-11 19:07:26,404 Stage-13 map = 100%,  reduce = 11%, Cumulative CPU 526.54 sec
+2015-08-11 19:07:27,490 Stage-13 map = 100%,  reduce = 12%, Cumulative CPU 531.19 sec
+2015-08-11 19:07:28,582 Stage-13 map = 100%,  reduce = 13%, Cumulative CPU 537.57 sec
+2015-08-11 19:07:29,680 Stage-13 map = 100%,  reduce = 14%, Cumulative CPU 541.07 sec
+2015-08-11 19:07:31,885 Stage-13 map = 100%,  reduce = 15%, Cumulative CPU 547.31 sec
+2015-08-11 19:07:35,203 Stage-13 map = 100%,  reduce = 16%, Cumulative CPU 552.65 sec
+2015-08-11 19:07:38,574 Stage-13 map = 100%,  reduce = 17%, Cumulative CPU 555.83 sec
+2015-08-11 19:07:47,557 Stage-13 map = 100%,  reduce = 18%, Cumulative CPU 561.2 sec
+2015-08-11 19:07:50,924 Stage-13 map = 100%,  reduce = 19%, Cumulative CPU 566.76 sec
+2015-08-11 19:07:52,020 Stage-13 map = 100%,  reduce = 20%, Cumulative CPU 568.8 sec
+2015-08-11 19:07:54,310 Stage-13 map = 100%,  reduce = 21%, Cumulative CPU 574.99 sec
+2015-08-11 19:07:55,397 Stage-13 map = 100%,  reduce = 22%, Cumulative CPU 578.74 sec
+2015-08-11 19:07:58,696 Stage-13 map = 100%,  reduce = 24%, Cumulative CPU 589.63 sec
+2015-08-11 19:08:04,346 Stage-13 map = 100%,  reduce = 25%, Cumulative CPU 598.11 sec
+2015-08-11 19:08:12,139 Stage-13 map = 100%,  reduce = 26%, Cumulative CPU 601.47 sec
+2015-08-11 19:08:15,395 Stage-13 map = 100%,  reduce = 27%, Cumulative CPU 608.33 sec
+2015-08-11 19:08:16,485 Stage-13 map = 100%,  reduce = 28%, Cumulative CPU 610.61 sec
+2015-08-11 19:08:17,568 Stage-13 map = 100%,  reduce = 29%, Cumulative CPU 616.1 sec
+2015-08-11 19:08:18,662 Stage-13 map = 100%,  reduce = 30%, Cumulative CPU 620.26 sec
+2015-08-11 19:08:19,773 Stage-13 map = 100%,  reduce = 31%, Cumulative CPU 622.68 sec
+2015-08-11 19:08:20,885 Stage-13 map = 100%,  reduce = 32%, Cumulative CPU 628.21 sec
+2015-08-11 19:08:24,148 Stage-13 map = 100%,  reduce = 33%, Cumulative CPU 637.16 sec
+2015-08-11 19:08:28,566 Stage-13 map = 100%,  reduce = 34%, Cumulative CPU 640.92 sec
+2015-08-11 19:08:35,337 Stage-13 map = 100%,  reduce = 35%, Cumulative CPU 646.47 sec
+2015-08-11 19:08:37,558 Stage-13 map = 100%,  reduce = 36%, Cumulative CPU 650.04 sec
+2015-08-11 19:08:39,848 Stage-13 map = 100%,  reduce = 37%, Cumulative CPU 653.24 sec
+2015-08-11 19:08:42,043 Stage-13 map = 100%,  reduce = 38%, Cumulative CPU 658.62 sec
+2015-08-11 19:08:44,291 Stage-13 map = 100%,  reduce = 40%, Cumulative CPU 666.55 sec
+2015-08-11 19:08:49,761 Stage-13 map = 100%,  reduce = 41%, Cumulative CPU 677.43 sec
+2015-08-11 19:08:51,990 Stage-13 map = 100%,  reduce = 42%, Cumulative CPU 680.61 sec
+2015-08-11 19:08:59,869 Stage-13 map = 100%,  reduce = 43%, Cumulative CPU 686.05 sec
+2015-08-11 19:09:03,285 Stage-13 map = 100%,  reduce = 45%, Cumulative CPU 691.57 sec
+2015-08-11 19:09:08,870 Stage-13 map = 100%,  reduce = 46%, Cumulative CPU 700.12 sec
+2015-08-11 19:09:09,967 Stage-13 map = 100%,  reduce = 47%, Cumulative CPU 705.69 sec
+2015-08-11 19:09:11,097 Stage-13 map = 100%,  reduce = 48%, Cumulative CPU 710.96 sec
+2015-08-11 19:09:12,193 Stage-13 map = 100%,  reduce = 49%, Cumulative CPU 714.63 sec
+2015-08-11 19:09:15,523 Stage-13 map = 100%,  reduce = 50%, Cumulative CPU 722.55 sec
+2015-08-11 19:09:16,629 Stage-13 map = 100%,  reduce = 51%, Cumulative CPU 725.93 sec
+2015-08-11 19:09:26,682 Stage-13 map = 100%,  reduce = 52%, Cumulative CPU 730.69 sec
+2015-08-11 19:09:28,864 Stage-13 map = 100%,  reduce = 53%, Cumulative CPU 735.67 sec
+2015-08-11 19:09:31,057 Stage-13 map = 100%,  reduce = 55%, Cumulative CPU 742.87 sec
+2015-08-11 19:09:32,190 Stage-13 map = 100%,  reduce = 56%, Cumulative CPU 746.29 sec
+2015-08-11 19:09:34,395 Stage-13 map = 100%,  reduce = 57%, Cumulative CPU 754.51 sec
+2015-08-11 19:09:37,653 Stage-13 map = 100%,  reduce = 58%, Cumulative CPU 762.72 sec
+2015-08-11 19:09:39,919 Stage-13 map = 100%,  reduce = 59%, Cumulative CPU 767.63 sec
+2015-08-11 19:09:47,974 Stage-13 map = 100%,  reduce = 60%, Cumulative CPU 771.38 sec
+2015-08-11 19:09:55,830 Stage-13 map = 100%,  reduce = 61%, Cumulative CPU 775.54 sec
+2015-08-11 19:09:56,969 Stage-13 map = 100%,  reduce = 62%, Cumulative CPU 777.78 sec
+2015-08-11 19:10:00,364 Stage-13 map = 100%,  reduce = 64%, Cumulative CPU 788.01 sec
+2015-08-11 19:10:01,455 Stage-13 map = 100%,  reduce = 65%, Cumulative CPU 791.93 sec
+2015-08-11 19:10:03,627 Stage-13 map = 100%,  reduce = 66%, Cumulative CPU 800.33 sec
+2015-08-11 19:10:05,783 Stage-13 map = 100%,  reduce = 68%, Cumulative CPU 809.09 sec
+2015-08-11 19:10:20,177 Stage-13 map = 100%,  reduce = 70%, Cumulative CPU 818.11 sec
+2015-08-11 19:10:21,254 Stage-13 map = 100%,  reduce = 71%, Cumulative CPU 822.5 sec
+2015-08-11 19:10:22,395 Stage-13 map = 100%,  reduce = 72%, Cumulative CPU 826.85 sec
+2015-08-11 19:10:23,539 Stage-13 map = 100%,  reduce = 73%, Cumulative CPU 832.38 sec
+2015-08-11 19:10:24,648 Stage-13 map = 100%,  reduce = 74%, Cumulative CPU 836.44 sec
+2015-08-11 19:10:26,776 Stage-13 map = 100%,  reduce = 75%, Cumulative CPU 845.22 sec
+2015-08-11 19:10:27,844 Stage-13 map = 100%,  reduce = 76%, Cumulative CPU 850.99 sec
+2015-08-11 19:10:31,134 Stage-13 map = 100%,  reduce = 77%, Cumulative CPU 853.59 sec
+2015-08-11 19:10:43,678 Stage-13 map = 100%,  reduce = 79%, Cumulative CPU 859.47 sec
+2015-08-11 19:10:47,044 Stage-13 map = 100%,  reduce = 81%, Cumulative CPU 868.3 sec
+2015-08-11 19:10:48,132 Stage-13 map = 100%,  reduce = 82%, Cumulative CPU 870.16 sec
+2015-08-11 19:10:51,417 Stage-13 map = 100%,  reduce = 83%, Cumulative CPU 881.18 sec
+2015-08-11 19:10:53,618 Stage-13 map = 100%,  reduce = 84%, Cumulative CPU 887.94 sec
+2015-08-11 19:10:55,815 Stage-13 map = 100%,  reduce = 85%, Cumulative CPU 893.84 sec
+2015-08-11 19:11:09,203 Stage-13 map = 100%,  reduce = 86%, Cumulative CPU 898.67 sec
+2015-08-11 19:11:10,312 Stage-13 map = 100%,  reduce = 87%, Cumulative CPU 903.43 sec
+2015-08-11 19:11:11,463 Stage-13 map = 100%,  reduce = 88%, Cumulative CPU 905.82 sec
+2015-08-11 19:11:13,687 Stage-13 map = 100%,  reduce = 89%, Cumulative CPU 914.74 sec
+2015-08-11 19:11:14,759 Stage-13 map = 100%,  reduce = 90%, Cumulative CPU 917.28 sec
+2015-08-11 19:11:15,851 Stage-13 map = 100%,  reduce = 91%, Cumulative CPU 921.17 sec
+2015-08-11 19:11:16,923 Stage-13 map = 100%,  reduce = 92%, Cumulative CPU 929.82 sec
+2015-08-11 19:11:17,992 Stage-13 map = 100%,  reduce = 93%, Cumulative CPU 934.38 sec
+2015-08-11 19:11:22,558 Stage-13 map = 100%,  reduce = 94%, Cumulative CPU 939.24 sec
+2015-08-11 19:11:31,516 Stage-13 map = 100%,  reduce = 95%, Cumulative CPU 945.46 sec
+2015-08-11 19:11:32,584 Stage-13 map = 100%,  reduce = 96%, Cumulative CPU 948.36 sec
+2015-08-11 19:11:33,690 Stage-13 map = 100%,  reduce = 97%, Cumulative CPU 952.96 sec
+2015-08-11 19:11:34,761 Stage-13 map = 100%,  reduce = 98%, Cumulative CPU 957.43 sec
+2015-08-11 19:11:35,850 Stage-13 map = 100%,  reduce = 99%, Cumulative CPU 963.0 sec
+2015-08-11 19:11:40,163 Stage-13 map = 100%,  reduce = 100%, Cumulative CPU 973.63 sec
+MapReduce Total cumulative CPU time: 16 minutes 13 seconds 630 msec
+Ended Job = job_1439319108807_0007
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20150811185558_7bec8244-3a9f-4cb4-9fb1-a6f460f86b7b.log
+2015-08-11 19:11:46	Starting to launch local task to process map join;	maximum memory = 255328256
+2015-08-11 19:11:47	Dump the side-table for tag: 1 with group count: 1 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10020/HashTable-Stage-27/MapJoin-mapfile61--.hashtable
+2015-08-11 19:11:47	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10020/HashTable-Stage-27/MapJoin-mapfile61--.hashtable (278 bytes)
+2015-08-11 19:11:47	Dump the side-table for tag: 1 with group count: 25 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10020/HashTable-Stage-27/MapJoin-mapfile71--.hashtable
+2015-08-11 19:11:47	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10020/HashTable-Stage-27/MapJoin-mapfile71--.hashtable (965 bytes)
+2015-08-11 19:11:47	End of local task; Time Taken: 1.544 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 4 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1439319108807_0008, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0008/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0008
+Hadoop job information for Stage-27: number of mappers: 1; number of reducers: 0
+2015-08-11 19:11:53,639 Stage-27 map = 0%,  reduce = 0%
+2015-08-11 19:12:00,928 Stage-27 map = 100%,  reduce = 0%, Cumulative CPU 3.34 sec
+MapReduce Total cumulative CPU time: 3 seconds 340 msec
+Ended Job = job_1439319108807_0008
+Stage-33 is filtered out by condition resolver.
+Stage-34 is selected by condition resolver.
+Stage-6 is filtered out by condition resolver.
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20150811185558_7bec8244-3a9f-4cb4-9fb1-a6f460f86b7b.log
+2015-08-11 19:12:05	Starting to launch local task to process map join;	maximum memory = 255328256
+2015-08-11 19:12:06	Dump the side-table for tag: 0 with group count: 1235 into file: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10016/HashTable-Stage-21/MapJoin-mapfile10--.hashtable
+2015-08-11 19:12:06	Uploaded 1 File to: file:/tmp/root/21de7129-0f26-4bf2-bf30-bc15beb6c4f8/hive_2015-08-11_18-55-58_357_3059443319928754814-1/-local-10016/HashTable-Stage-21/MapJoin-mapfile10--.hashtable (277189 bytes)
+2015-08-11 19:12:06	End of local task; Time Taken: 1.212 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 6 out of 10
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1439319108807_0009, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0009/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0009
+Hadoop job information for Stage-21: number of mappers: 1; number of reducers: 0
+2015-08-11 19:12:12,389 Stage-21 map = 0%,  reduce = 0%
+2015-08-11 19:12:19,641 Stage-21 map = 100%,  reduce = 0%, Cumulative CPU 3.92 sec
+MapReduce Total cumulative CPU time: 3 seconds 920 msec
+Ended Job = job_1439319108807_0009
+Launching Job 7 out of 10
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1439319108807_0010, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0010/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0010
+Hadoop job information for Stage-7: number of mappers: 1; number of reducers: 1
+2015-08-11 19:12:26,797 Stage-7 map = 0%,  reduce = 0%
+2015-08-11 19:12:33,150 Stage-7 map = 100%,  reduce = 0%, Cumulative CPU 1.22 sec
+2015-08-11 19:12:40,558 Stage-7 map = 100%,  reduce = 100%, Cumulative CPU 2.71 sec
+MapReduce Total cumulative CPU time: 2 seconds 710 msec
+Ended Job = job_1439319108807_0010
+MapReduce Jobs Launched: 
+Stage-Stage-5: Map: 1  Reduce: 1   Cumulative CPU: 16.47 sec   HDFS Read: 9525518 HDFS Write: 6848729 SUCCESS
+Stage-Stage-32: Map: 1   Cumulative CPU: 207.33 sec   HDFS Read: 849318 HDFS Write: 6240840632 SUCCESS
+Stage-Stage-13: Map: 25  Reduce: 94   Cumulative CPU: 973.63 sec   HDFS Read: 6251051526 HDFS Write: 1348597 SUCCESS
+Stage-Stage-27: Map: 1   Cumulative CPU: 3.34 sec   HDFS Read: 1383436 HDFS Write: 278280 SUCCESS
+Stage-Stage-21: Map: 1   Cumulative CPU: 3.92 sec   HDFS Read: 6856756 HDFS Write: 166643 SUCCESS
+Stage-Stage-7: Map: 1  Reduce: 1   Cumulative CPU: 2.71 sec   HDFS Read: 172995 HDFS Write: 16291 SUCCESS
+Total MapReduce CPU Time Spent: 20 minutes 7 seconds 400 msec
+OK
+9990.05	Supplier#000008890	ROMANIA	348889	Manufacturer#1	6lmM3OrUukwhKXY0zqypO2qEsgj	29-208-398-4306	ts. unusual deposits haggle furiously along the even
+9971.99	Supplier#000016715	FRANCE	166698	Manufacturer#3	BjEu56DmMNx VHZ	16-401-454-3384	 even requests; fluffily ironic 
+9968.32	Supplier#000014933	GERMANY	229921	Manufacturer#3	2tqqYCKWoz5	17-750-957-2495	fully final requests: slyly final accounts do are special, express deposits. sly
+9968.32	Supplier#000014933	GERMANY	279893	Manufacturer#4	2tqqYCKWoz5	17-750-957-2495	fully final requests: slyly final accounts do are special, express deposits. sly
+9968.09	Supplier#000007191	ROMANIA	127190	Manufacturer#1	y62XYc3,bw33tqGBua2LqHCd8pIXNL3xO jH,	29-327-376-6773	y bold accounts are quickly among the carefully final idea
+9967.45	Supplier#000002302	FRANCE	287259	Manufacturer#1	wMEzrsX2KKpTaJGE3uGEUibymG	16-486-165-5642	gly carefully bold deposits. accounts nag b
+9938.53	Supplier#000005359	UNITED KINGDOM	115348	Manufacturer#4	QKuHYh,vZGiwu2FWEJoLDx04	33-429-790-6131	uriously regular requests hag
+9938.53	Supplier#000005359	UNITED KINGDOM	380339	Manufacturer#2	QKuHYh,vZGiwu2FWEJoLDx04	33-429-790-6131	uriously regular requests hag
+9936.22	Supplier#000005250	UNITED KINGDOM	255225	Manufacturer#4	B3rqp0xbSEim4Mpy2RH J	33-320-228-2957	etect about the furiously final accounts. slyly ironic pinto beans sleep inside the furiously
+9936.22	Supplier#000005250	UNITED KINGDOM	335217	Manufacturer#5	B3rqp0xbSEim4Mpy2RH J	33-320-228-2957	etect about the furiously final accounts. slyly ironic pinto beans sleep inside the furiously
+9926.99	Supplier#000017392	FRANCE	387353	Manufacturer#2	B2Y,iyELRorfExkZudlfE4X7bdWyLh4PCzzN	16-811-216-7183	mptotes against the furiously ironic deposits unwind slyly acr
+9925.04	Supplier#000003400	ROMANIA	118394	Manufacturer#3	IZSzKpRL1RNar39LvF	29-295-531-2833	unts along the ironic accounts must have to haggle carefully
+9914.18	Supplier#000016501	FRANCE	181473	Manufacturer#2	tq Q3XRqIDNmgDKU2evPPG	16-496-610-9975	ake blithely regular deposits. ironic 
+9903.42	Supplier#000003807	GERMANY	233784	Manufacturer#5	ot3nvn3kdvL9YcxMp8fhWN CsorSKs0LN4	17-850-427-8587	 the quickly final deposits nod carefully ideas. regula
+9897.41	Supplier#000017795	UNITED KINGDOM	72791	Manufacturer#2	A5a1lovY,yQoSHaYon5cGgo1l	33-398-227-1033	 express accounts haggle blithely. furiously ironic requests cajole quickly. quickly final fo
+9897.41	Supplier#000017795	UNITED KINGDOM	287766	Manufacturer#1	A5a1lovY,yQoSHaYon5cGgo1l	33-398-227-1033	 express accounts haggle blithely. furiously ironic requests cajole quickly. quickly final fo
+9880.72	Supplier#000000896	GERMANY	290867	Manufacturer#2	yvNZycuQYm9d9A8v1m	17-790-100-9143	 regular deposits. carefully unusual accounts haggle ironic,
+9873.94	Supplier#000016424	RUSSIA	176423	Manufacturer#1	uq1NWlLbhdJNZArm3	32-605-116-3927	 the ironic instructions. blithely ironic accounts are slyly. fluffily unusual excuses after the re
+9870.78	Supplier#000001286	GERMANY	56283	Manufacturer#2	YKA,E2fjiVd7eUrzp2Ef8j1QxGo2DFnosaTEH	17-516-924-4574	 regular accounts. furiously unusual courts above the fi
+9862.6	Supplier#000014927	FRANCE	84918	Manufacturer#5	COfd0U3TMmbp4U3psHL,tAhCcYQZVtYs7dH	16-800-483-3549	sts. packages wake quickly according to the pending tithes. quickly express packa
+9840.97	Supplier#000007663	UNITED KINGDOM	187662	Manufacturer#4	LVDAB8vrsB9R7RO sq6a40,aqy9BBVm	33-823-738-5604	ges. deposits wake ironic accounts. furiously regular dolphins haggle furiously! daring, regular id
+9837.7	Supplier#000010301	ROMANIA	235267	Manufacturer#4	naAcnka2ODinvXM9rqg4W	29-919-526-7202	 fluffily; regular, even packages solve furiously special reques
+9823.21	Supplier#000015946	GERMANY	360891	Manufacturer#4	oHOHINE7WhXFGmX6GoBDm1qpTPDm0oEtRT4J0	17-266-516-5246	gular requests. packages nag quickly. deposits cajole fur
+9814.5	Supplier#000019945	ROMANIA	289916	Manufacturer#3	 Y6YcWcdK31rTOxGAYA,oZKgaoyzBPgQ	29-732-301-5529	 blithely fluffy packages. sl
+9807.46	Supplier#000009373	FRANCE	84368	Manufacturer#4	UXNiDODh2wwCKAQaKIWaWVRC7jDE7	16-248-857-9945	s wake furiously express platelets. carefully final deposits int
+9796.08	Supplier#000013076	ROMANIA	233075	Manufacturer#2	pmgc15WzpU	29-304-692-3702	old courts sleep slyly even accounts. busily unusual excuses are. ironic, sile
+9778.55	Supplier#000008472	FRANCE	43469	Manufacturer#4	4at1BaGXf8r	16-516-582-7374	 ideas boost ironic hockey players. requests maintain. blithely special requests detect 
+9778.55	Supplier#000008472	FRANCE	133453	Manufacturer#4	4at1BaGXf8r	16-516-582-7374	 ideas boost ironic hockey players. requests maintain. blithely special requests detect 
+9769.62	Supplier#000017696	RUSSIA	2695	Manufacturer#3	9gDzwGCzvHcA63	32-556-573-5029	ess deposits. close requests boost reg
+9766.49	Supplier#000010072	FRANCE	250071	Manufacturer#2	vPE1EM9ldMe1QIzd6gZnPIbQs	16-787-198-9287	he slyly special accounts. furious
+9761.8	Supplier#000005471	ROMANIA	295442	Manufacturer#3	 6q15XuKIPr7AgoDJX2F2q	29-637-173-8729	posits. quickly even foxes 
+9759.38	Supplier#000000044	GERMANY	290015	Manufacturer#1	kERxlLDnlIZJdN66zAPHklyL	17-713-930-5667	x. carefully quiet account
+9749.51	Supplier#000008566	FRANCE	383546	Manufacturer#5	CJJ vg1hGBwps2HgREKQqbzmQ038LPXtbha26vqA	16-158-515-4201	elets haggle after the slyly even ide
+9748.96	Supplier#000018298	UNITED KINGDOM	133291	Manufacturer#3	QRzSmC0gEo	33-701-725-6283	. blithely pending theodolites sleep slyly at the fluffily express pinto beans. bold excuses nag sly
+9748.96	Supplier#000018298	UNITED KINGDOM	338297	Manufacturer#1	QRzSmC0gEo	33-701-725-6283	. blithely pending theodolites sleep slyly at the fluffily express pinto beans. bold excuses nag sly
+9739.86	Supplier#000003384	FRANCE	48377	Manufacturer#5	o,Z3v4POifevE k9U1b 6J1ucX,I	16-494-913-5925	s after the furiously bold packages sleep fluffily idly final requests: quickly final
+9738.51	Supplier#000015648	FRANCE	200617	Manufacturer#2	dUbH9wlpCN3	16-846-468-6810	. pending, thin packages according to the quickly ironic pinto b
+9695.35	Supplier#000015405	ROMANIA	260365	Manufacturer#3	LvTadZdoV etWI	29-451-458-2003	ily special packages at the fluffily even pa
+9695.35	Supplier#000015405	ROMANIA	300359	Manufacturer#2	LvTadZdoV etWI	29-451-458-2003	ily special packages at the fluffily even pa
+9690.12	Supplier#000005457	FRANCE	330408	Manufacturer#2	3gTI SbYeckJOAGls6NlUPQUnbfhBmMXATrM	16-421-469-8087	 after the regular deposits! fluffily busy courts wake carefully
+9676.58	Supplier#000012023	FRANCE	196995	Manufacturer#1	a7D3F5BJquaBg2YJ2ik	16-247-367-7822	nding dependencies sleep slyly ironic, brave
+9659.13	Supplier#000015318	ROMANIA	175317	Manufacturer#1	HPxBHJzgXUjQhw, f3GQLxGwX6YG6FL5T02NYE	29-645-407-7111	ns. regular requests affix slyly. slyly silent platelets are along the furiously final idea
+9651.79	Supplier#000014688	UNITED KINGDOM	164671	Manufacturer#2	 Ph4FEE,z9kuewbcCRTWAPFdfuXj	33-316-323-4526	ly special braids are carefully
+9650.14	Supplier#000015874	ROMANIA	365837	Manufacturer#3	iQZ5N9FnS0ZvUAc1BRuPHQR	29-449-614-3584	deposits sleep. slyly unusual foxes 
+9649.37	Supplier#000010569	GERMANY	45566	Manufacturer#1	OTCC4YrLr1P	17-134-518-2041	eposits. bold, bold deposits are quickly above the ideas. accounts
+9646.85	Supplier#000006371	UNITED KINGDOM	311325	Manufacturer#4	S,L4tTXgvegIusPLEV3zAYBvpzLOLWEJhDeIG	33-702-175-1305	ct furiously according to the bold, regular accounts. even deposits nag 
+9643.55	Supplier#000005148	ROMANIA	330099	Manufacturer#5	kT4ciVFslx9z4s79p Js825	29-252-617-4850	final excuses. final ideas boost quickly furiously speci
+9614.05	Supplier#000019430	FRANCE	204399	Manufacturer#3	OEZ7ty8hmqvbmIdqfur,HOvy7GLVeP4	16-721-318-4459	rns. fluffily ironic deposits haggle carefully pending, final i
+9614.05	Supplier#000019430	FRANCE	234418	Manufacturer#2	OEZ7ty8hmqvbmIdqfur,HOvy7GLVeP4	16-721-318-4459	rns. fluffily ironic deposits haggle carefully pending, final i
+9563.1	Supplier#000009459	GERMANY	189458	Manufacturer#2	eNcR5W,jns	17-230-560-9991	. carefully even instructions affix slyly even deposit
+9545.04	Supplier#000014845	GERMANY	254844	Manufacturer#3	fyFtsX41dNY8QlTuW1RHHoAPwz7O5h6o1O9tw	17-977-604-3736	ly regular instructions nag slyly-- bold, express dolphins sleep carefully ironic accounts.
+9543.21	Supplier#000012883	FRANCE	92882	Manufacturer#5	GzKYTNy0ku4LFqoXlLg3F,c	16-128-543-3693	es run furiously blithely unusual platelets. regula
+9529.36	Supplier#000004113	ROMANIA	309067	Manufacturer#1	35Re27oAr8h sP3V	29-821-992-6070	express theodolites are b
+9519.14	Supplier#000004568	UNITED KINGDOM	294539	Manufacturer#3	BtrYY,xTReh,wSJe	33-744-982-9995	 final courts. slyly regular requests abo
+9504.34	Supplier#000012303	ROMANIA	17302	Manufacturer#1	SJ gGZ2dud805PRKuxdBsgb	29-655-675-4744	ntegrate fluffily after th
+9496.41	Supplier#000011868	FRANCE	11867	Manufacturer#3	DMpx1d,PSFi0,WFt8wuJKjb8cWIChSLba	16-498-733-5552	mptotes x-ray idly along the slyly regular accounts. asymptotes are. fluffily special courts 
+9494.79	Supplier#000017738	GERMANY	397737	Manufacturer#1	oCnRBKoyOfuT9bC3o9gyOZ8eZs,yoOTPZcOT3K6	17-879-949-2376	ons. furiously ironic requests haggle accord
+9492.79	Supplier#000005975	GERMANY	280960	Manufacturer#3	S6mIiCTx82z7lV	17-992-579-4839	arefully pending accounts. blithely regular excuses boost carefully carefully ironic p
+9484.38	Supplier#000016970	RUSSIA	66963	Manufacturer#4	OXGE3hUDkTCfm,O9NsF0gkKHba7GY	32-405-156-1302	ular deposits. regular accounts along the slyly even pinto beans nod slyly slyly
+9484.38	Supplier#000016970	RUSSIA	381912	Manufacturer#5	OXGE3hUDkTCfm,O9NsF0gkKHba7GY	32-405-156-1302	ular deposits. regular accounts along the slyly even pinto beans nod slyly slyly
+9482.11	Supplier#000016249	UNITED KINGDOM	286220	Manufacturer#1	G3AJ8PvA50	33-998-938-8703	ate furiously at the careful
+9474.72	Supplier#000011600	FRANCE	286585	Manufacturer#4	zvYqsmnBaHrBUwjUtlR 	16-231-768-6655	l pinto beans. theodolites from the
+9461.05	Supplier#000002536	UNITED KINGDOM	382535	Manufacturer#4	8mmGbyzaU 7ZS2wJumTibypncu9pNkDc4FYA	33-556-973-5522	. slyly regular deposits wake slyly. furiously regular warthogs are.
+9444.25	Supplier#000016296	UNITED KINGDOM	296295	Manufacturer#5	es51UVeOWbyRdb53y	33-103-938-8339	s use above the slyly even packages. carefully pending foxes sle
+9441.64	Supplier#000006975	FRANCE	361956	Manufacturer#1	GSjo3R0,9AyFO2xe7AdDsU7d6cJTkwm	16-926-547-9831	posits. final instructions cajole daringly 
+9431.3	Supplier#000012756	RUSSIA	67752	Manufacturer#2	d9CsjxpwGZqBc9	32-152-841-9728	thes wake blithely. ironic accounts cajole against th
+9431.3	Supplier#000012756	RUSSIA	382717	Manufacturer#3	d9CsjxpwGZqBc9	32-152-841-9728	thes wake blithely. ironic accounts cajole against th
+9408.65	Supplier#000007772	UNITED KINGDOM	317741	Manufacturer#2	AiC5YAH,gdu0i7	33-152-491-1126	nag against the final requests. furiously unusual packages cajole blit
+9396.65	Supplier#000019851	GERMANY	224817	Manufacturer#2	vIyaPkckxXLdGYgLnBvPFBBlmQ6Jc	17-876-630-1003	egular, ironic requests boost blithely
+9357.45	Supplier#000006188	UNITED KINGDOM	151166	Manufacturer#4	g801,ssP8wpTk4Hm	33-583-607-1633	ously always regular packages. fluffily even accounts beneath the furiously final pack
+9333.72	Supplier#000019712	GERMANY	279711	Manufacturer#3	MVJpC6 7Lm2f	17-688-546-4180	nts nag blithely among the final, final foxes. blithely even ideas within the quickly s
+9318.44	Supplier#000008079	ROMANIA	83074	Manufacturer#4	5AeAxE5FnSi0KIA31NidOiKc,sdMnFI7,W774X	29-844-542-3727	y ironic pinto beans. packages wake carefully regu
+9309.8	Supplier#000006427	ROMANIA	211396	Manufacturer#2	rrMkXW7o0O0U5,CsVTzEKtSRfAWtvhQe5Iu	29-908-367-5652	packages. final pinto beans cajole. carefully ironic ideas doze. bold accounts cajole along the
+9301.36	Supplier#000006874	GERMANY	61870	Manufacturer#3	0pEC2MdwBUKMZlJr9R	17-789-226-5880	luffily express packages across the regular deposits affix around the quickl
+9280.27	Supplier#000007194	ROMANIA	232160	Manufacturer#4	zhRUQkBSrFYxIAXTfInj vyGRQjeK	29-318-454-2133	o beans haggle after the furiously unusual deposits. carefully silent dolphins cajole carefully
+9277.3	Supplier#000003908	UNITED KINGDOM	293879	Manufacturer#5	Okl1FHH574YroExB	33-154-728-5624	thely regular packages. quickly express foxes integrate regular accounts. blithel
+9271.27	Supplier#000004693	FRANCE	159685	Manufacturer#1	fwDDzY8D 3df	16-277-475-5116	even packages. quickly ironic accounts cajole slyly carefully regular depos
+9211.65	Supplier#000005169	FRANCE	175152	Manufacturer#3	oO6GZCtr7F	16-492-650-1709	 requests. boldly regular requests use blithely packages. carefu
+9192.1	Supplier#000000115	UNITED KINGDOM	355097	Manufacturer#5	nJ 2t0f7Ve,wL1,6WzGBJLNBUCKlsV	33-597-248-1220	es across the carefully express accounts boost caref
+9185.71	Supplier#000016723	FRANCE	126710	Manufacturer#5	U 797NX  G 4lziIHvNWvh	16-505-792-5297	lithely final packages. theodolites boost about the unusual i
+9184.55	Supplier#000004619	RUSSIA	9618	Manufacturer#5	YPY8CT8q zwHdcJGvuw97ybDKoSCHw	32-333-528-4674	ly regular ideas. final, express packages use fluffily accounts. quickly final instructi
+9179.91	Supplier#000017794	GERMANY	242757	Manufacturer#5	v GL6agR1qd berb	17-695-554-9139	dencies. regular packages sleep after the a
+9173.66	Supplier#000015301	UNITED KINGDOM	145286	Manufacturer#3	RrR1uVT6ZSTR93n7oDhYHgj2x,f0gzq	33-684-448-4004	 instructions thrash blithely. excuses among the ideas boost across the even theodolites. furio
+9173.48	Supplier#000018498	RUSSIA	293483	Manufacturer#3	gUD2S53g1mDXktyuHUC	32-252-377-3899	sits. fluffily even accounts about the slyly even requests 
+9146.74	Supplier#000019922	FRANCE	389883	Manufacturer#5	j,M,e3NzwfmeFkKdhssq	16-953-941-2438	ges. packages around the 
+9077.5	Supplier#000002512	FRANCE	172495	Manufacturer#3	Tl8qaTO 4k0tMuYRARcsaW8kO5ABOIrrgoatxf2D	16-137-555-4045	ly unusual escapades according to the furiously regular asymptotes use around the even, unusual r
+9074.2	Supplier#000012234	GERMANY	252233	Manufacturer#1	zeaj0E6LyCP6v6nNIPiDRPxhCTqU9Hr,,5rsX	17-287-302-4382	oss the carefully final excuses doubt silently unusual pinto beans. furious, regul
+9068.47	Supplier#000003756	FRANCE	143755	Manufacturer#5	uKAIfW8hidCiViTFHF9J, PGHuM	16-138-378-7472	 to the pinto beans cajole across the furiously regular asymptotes. final requests wake. final 
+9066.69	Supplier#000018658	RUSSIA	38657	Manufacturer#3	by5AQlxggu cvy,01sJUQm8,hVpxGprXmhPp	32-203-414-6420	. furiously busy waters according to the quickly final
+9055.69	Supplier#000010474	FRANCE	50473	Manufacturer#2	d6IRfatRXBqRv0R3e6HXKGglwG2cgKS7ha4t	16-966-684-8116	regular packages alongside of the even pains nag about the carefully regular requests. some
+9049.65	Supplier#000014940	FRANCE	394939	Manufacturer#3	,RuZ1RnQp,	16-278-757-1189	, regular dependencies are. requests cajole quickly slyly blithe foxes. pending dependen
+9048.09	Supplier#000007188	FRANCE	37185	Manufacturer#1	9V2cDltKfOErZ	16-681-517-1402	es cajole furiously. special, 
+9037.44	Supplier#000012947	GERMANY	142932	Manufacturer#2	kWX  D5UWzPhOc5LN6J jzTU7c	17-899-870-6857	s use along the blithe foxes. b
+9032.15	Supplier#000000959	GERMANY	260958	Manufacturer#1	8grA EHBnwOZhO	17-108-642-3106	nding dependencies nag furiou
+9023.31	Supplier#000005481	FRANCE	65480	Manufacturer#5	3yFBDRhiG1LT7deOr4iojpsa	16-163-758-7030	y ironic excuses sleep ironic foxes? carefully pending requests haggle carefully 
+9023.31	Supplier#000005481	FRANCE	210450	Manufacturer#5	3yFBDRhiG1LT7deOr4iojpsa	16-163-758-7030	y ironic excuses sleep ironic foxes? carefully pending requests haggle carefully 
+9010.63	Supplier#000001784	FRANCE	41783	Manufacturer#2	WwxpO7ccLORAYgPyH	16-690-399-1778	eodolites nag furiously. even, regular ideas detect slyly carefully quick accounts. even, silent ac
+9009.3	Supplier#000000667	UNITED KINGDOM	385609	Manufacturer#4	La6cVlSLCZZDhhX9FtKsRlylP,,lI3IYjHT8yJJX	33-382-268-5150	ular accounts after the fluffily pending accounts are according to the
+8980.24	Supplier#000004534	FRANCE	264533	Manufacturer#2	CKOK7nSpYr5KnjqJXaZktTbIiLFkbo h	16-798-297-4249	es cajole furiously. blithely bold pinto beans wake account
+8978.98	Supplier#000005470	ROMANIA	350418	Manufacturer#3	dNQ2q4BhVvkvvy0HSjWx864vuPmxHKggIGkAY2Ux	29-743-776-5345	ecial foxes about the express, pending Tiresias sleep furiously
+Time taken: 1003.345 seconds, Fetched: 100 row(s)

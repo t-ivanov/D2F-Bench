@@ -1,0 +1,94 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/etc/hive/2.3.0.0-2557/0/hive-log4j.properties
+OK
+Time taken: 1.283 seconds
+Query ID = root_20150811191456_b2e12c9b-bff9-4327-bc83-2a2afa712673
+Total jobs = 3
+Stage-1 is selected by condition resolver.
+Launching Job 1 out of 3
+Number of reduce tasks not specified. Estimated from input data size: 7
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1439319108807_0017, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0017/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0017
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 7
+2015-08-11 19:15:09,130 Stage-1 map = 0%,  reduce = 0%
+2015-08-11 19:15:19,662 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 5.45 sec
+2015-08-11 19:15:31,950 Stage-1 map = 50%,  reduce = 2%, Cumulative CPU 27.32 sec
+2015-08-11 19:15:36,438 Stage-1 map = 50%,  reduce = 5%, Cumulative CPU 36.41 sec
+2015-08-11 19:15:37,551 Stage-1 map = 50%,  reduce = 7%, Cumulative CPU 36.61 sec
+2015-08-11 19:15:39,761 Stage-1 map = 50%,  reduce = 10%, Cumulative CPU 43.48 sec
+2015-08-11 19:15:40,828 Stage-1 map = 50%,  reduce = 14%, Cumulative CPU 44.15 sec
+2015-08-11 19:15:42,974 Stage-1 map = 67%,  reduce = 14%, Cumulative CPU 49.35 sec
+2015-08-11 19:16:01,816 Stage-1 map = 83%,  reduce = 14%, Cumulative CPU 99.01 sec
+2015-08-11 19:16:04,954 Stage-1 map = 96%,  reduce = 14%, Cumulative CPU 102.55 sec
+2015-08-11 19:16:06,005 Stage-1 map = 100%,  reduce = 14%, Cumulative CPU 103.36 sec
+2015-08-11 19:16:07,398 Stage-1 map = 100%,  reduce = 17%, Cumulative CPU 103.58 sec
+2015-08-11 19:16:08,528 Stage-1 map = 100%,  reduce = 43%, Cumulative CPU 106.88 sec
+2015-08-11 19:16:09,687 Stage-1 map = 100%,  reduce = 56%, Cumulative CPU 110.98 sec
+2015-08-11 19:16:10,802 Stage-1 map = 100%,  reduce = 57%, Cumulative CPU 112.4 sec
+2015-08-11 19:16:11,920 Stage-1 map = 100%,  reduce = 63%, Cumulative CPU 118.3 sec
+2015-08-11 19:16:13,042 Stage-1 map = 100%,  reduce = 68%, Cumulative CPU 120.13 sec
+2015-08-11 19:16:14,089 Stage-1 map = 100%,  reduce = 86%, Cumulative CPU 126.08 sec
+2015-08-11 19:16:17,230 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 129.38 sec
+MapReduce Total cumulative CPU time: 2 minutes 9 seconds 380 msec
+Ended Job = job_1439319108807_0017
+Launching Job 2 out of 3
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1439319108807_0018, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0018/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0018
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2015-08-11 19:16:23,402 Stage-2 map = 0%,  reduce = 0%
+2015-08-11 19:16:28,611 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 0.91 sec
+2015-08-11 19:16:37,082 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 2.36 sec
+MapReduce Total cumulative CPU time: 2 seconds 360 msec
+Ended Job = job_1439319108807_0018
+Launching Job 3 out of 3
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1439319108807_0019, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1439319108807_0019/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1439319108807_0019
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2015-08-11 19:16:44,171 Stage-3 map = 0%,  reduce = 0%
+2015-08-11 19:16:49,398 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 0.85 sec
+2015-08-11 19:16:55,667 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 2.19 sec
+MapReduce Total cumulative CPU time: 2 seconds 190 msec
+Ended Job = job_1439319108807_0019
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2  Reduce: 7   Cumulative CPU: 129.38 sec   HDFS Read: 53223818 HDFS Write: 1701 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 2.36 sec   HDFS Read: 7553 HDFS Write: 243 SUCCESS
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 2.19 sec   HDFS Read: 4853 HDFS Write: 77 SUCCESS
+Total MapReduce CPU Time Spent: 2 minutes 13 seconds 930 msec
+OK
+1-URGENT	21004
+2-HIGH	21200
+3-MEDIUM	20893
+4-NOT SPECIFIED	20961
+5-LOW	20943
+Time taken: 119.859 seconds, Fetched: 5 row(s)
