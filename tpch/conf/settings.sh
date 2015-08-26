@@ -17,6 +17,8 @@ DIR=
 # The total number of chunks. The entire dataset will be divided into this number of chunks.
 BUCKETS=13
 
+# Execution engine: hive, spark-sql etc.
+ENGINE=hive
 # Data file format for storing the table data in Hive 
 # Supported formats are: ORC, RCfile, Parquet, Avro, SequenceFile, TextFile 
 FILE_FORMAT=orc

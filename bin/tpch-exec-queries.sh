@@ -45,8 +45,15 @@ do
 	STARTDATE="`date +%Y/%m/%d:%H:%M:%S`"
 	STARTDATE_EPOCH="`date +%s`" # seconds since epoch
 	# Execute query
-	hive -i ${HIVE_SETTING} --database ${DATABASE} -f ${QUERY_DIR}/tpch_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
-	
+	if [ $ENGINE == "spark-sql" ]
+	then
+	# first have to select the database "use tpch_orc_2sf"
+		spark-sql -i ${HIVE_SETTING} -f ${QUERY_DIR}/tpch_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
+	else
+		#default engine is hive
+		echo "Hive query: ${i}"
+		hive -i ${HIVE_SETTING} --database ${DATABASE} -f ${QUERY_DIR}/tpch_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
+	fi
 	# Calculate the time
 	STOPDATE="`date +%Y/%m/%d:%H:%M:%S`"
 	STOPDATE_EPOCH="`date +%s`" # seconds since epoch
