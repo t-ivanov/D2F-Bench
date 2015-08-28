@@ -20,7 +20,7 @@ LOG_FILE_EXEC_TIMES="${BENCH_HOME}/${BENCHMARK}/logs/query_times.csv"
 if [ ! -e "$LOG_FILE_EXEC_TIMES" ]
   then
     touch "$LOG_FILE_EXEC_TIMES"
-    echo "STARTDATE_EPOCH|STOPDATE_EPOCH|DURATION_MS|STARTDATE|STOPDATE|DURATION|BENCHMARK|DATABASE|SCALE_FACTOR|FILE_FORMAT|QUERY" >> "${LOG_FILE_EXEC_TIMES}"
+    echo "STARTDATE_EPOCH|STOPDATE_EPOCH|DURATION_MS|STARTDATE|STOPDATE|DURATION|BENCHMARK|DATABASE|SCALE_FACTOR|ENGINE|FILE_FORMAT|QUERY" >> "${LOG_FILE_EXEC_TIMES}"
 fi
 
 if [ ! -w "$LOG_FILE_EXEC_TIMES" ]
@@ -49,8 +49,16 @@ do
 	then
 	# first have to select the database "use tpch_orc_2sf"
 		spark-sql -i ${HIVE_SETTING} -f ${QUERY_DIR}/tpch_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
+	elif [ $ENGINE == "pig" ]
+	then
+		#execute pig queires
+		# delete existing output file
+		hadoop fs -rmr "$PIG_OUTPUT_DIR/Q${i}_out"
+		echo "Running Pig Query Q$i"
+		pig -param input=${PIG_INPUT_DIR} -param output=${PIG_OUTPUT_DIR}  -f ${QUERY_DIR}/pig/Q${i}.pig > ${RESULT_DIR}/${DATABASE}_pig_Q${i}.txt 2>&1
 	else
 		#default engine is hive
+		ENGINE=hive
 		echo "Hive query: ${i}"
 		hive -i ${HIVE_SETTING} --database ${DATABASE} -f ${QUERY_DIR}/tpch_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
 	fi
@@ -61,7 +69,7 @@ do
 	DIFF_ms="$(($DIFF_s * 1000))"
 	DURATION="$(($DIFF_s / 3600 ))h $((($DIFF_s % 3600) / 60))m $(($DIFF_s % 60))s"
 	# log the times in load_time.csv file
-	echo "${STARTDATE_EPOCH}|${STOPDATE_EPOCH}|${DIFF_ms}|${STARTDATE}|${STOPDATE}|${DURATION}|${BENCHMARK}|${DATABASE}|${SCALE}|${FILE_FORMAT}|Query ${i}" >> ${LOG_FILE_EXEC_TIMES}
+	echo "${STARTDATE_EPOCH}|${STOPDATE_EPOCH}|${DIFF_ms}|${STARTDATE}|${STOPDATE}|${DURATION}|${BENCHMARK}|${DATABASE}|${SCALE}|${ENGINE}|${FILE_FORMAT}|Query ${i}" >> ${LOG_FILE_EXEC_TIMES}
 
 	
 	#i=$(( i+1 ))	

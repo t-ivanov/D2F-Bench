@@ -17,17 +17,22 @@ DIR=
 # The total number of chunks. The entire dataset will be divided into this number of chunks.
 BUCKETS=13
 
-# Execution engine: hive, spark-sql etc.
-ENGINE=hive
+# Execution engine: hive, pig, spark-sql etc.
+ENGINE=pig
+
 # Data file format for storing the table data in Hive 
 # Supported formats are: ORC, RCfile, Parquet, Avro, SequenceFile, TextFile 
 FILE_FORMAT=orc
 
 # Name of the database in Metastore
-DATABASE=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf
+DATABASE=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf.db
 
 # Number of queries to execute in TPC-H --> 22 for all, or space separated list
 NUM_QUERIES=22
+
+# Pig specific params
+PIG_INPUT_DIR=/apps/hive/warehouse/${DATABASE}
+PIG_OUTPUT_DIR=/apps/hive/warehouse
 
 # Ths ssh options
 #SSH_OPTS="-o StrictHostKeyChecking=no -o ServerAliveInterval=30"
