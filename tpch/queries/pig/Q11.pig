@@ -32,4 +32,4 @@ outerHaving = filter outerSumResult by outSum > sumResult.totalSum * 0.0001;
 
 ord = order outerHaving by outSum desc;
 
-store ord into '$output/Q11_out' USING PigStorage(' ');
+store ord into '$output/Q11_out' USING PigStorage('|');

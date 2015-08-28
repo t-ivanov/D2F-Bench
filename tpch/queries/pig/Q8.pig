@@ -48,5 +48,5 @@ grResult = GROUP sels1 by o_year;
 sumResult = foreach grResult generate group, SUM($1.case_volume) / SUM($1.volume);
 sortResult = order sumResult by group;
 
-store sortResult into '$output/Q8_out' USING PigStorage(' ');
+store sortResult into '$output/Q8_out' USING PigStorage('|');
 

@@ -42,4 +42,4 @@ sumResult = foreach grResult generate group.c_custkey, group.c_name, SUM(sell1.v
 sortResult = order sumResult by revenue desc;
 limitResult = limit sortResult 20;
 
-store limitResult into '$output/Q10_out' USING PigStorage(' ');
+store limitResult into '$output/Q10_out' USING PigStorage('|');

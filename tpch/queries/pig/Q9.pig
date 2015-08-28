@@ -42,4 +42,4 @@ grResult = GROUP selo1 by (nation_name, o_year);
 sumResult = foreach grResult generate flatten(group), SUM(selo1.amount) as sum_profit;
 sortResult = order sumResult by nation_name, o_year desc;
 
-store sortResult into '$output/Q9_out' USING PigStorage(' ');
+store sortResult into '$output/Q9_out' USING PigStorage('|');

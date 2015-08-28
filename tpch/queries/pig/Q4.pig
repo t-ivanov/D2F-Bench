@@ -17,4 +17,4 @@ PriorityGroup = GROUP OrdersCount BY o_orderpriority;
 PriorityChecking = FOREACH PriorityGroup GENERATE group, COUNT(OrdersCount) AS order_count;
 
 SortedPriorityChecking = ORDER PriorityChecking BY group;
-STORE SortedPriorityChecking into '$output/Q4_out' USING PigStorage(' ');
+STORE SortedPriorityChecking into '$output/Q4_out' USING PigStorage('|');

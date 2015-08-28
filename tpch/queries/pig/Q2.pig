@@ -37,4 +37,4 @@ SortedMinimumCostSupplier = ORDER RawResults BY s_acctbal DESC, n_name, s_name, 
 
 HundredMinimumCostSupplier = LIMIT SortedMinimumCostSupplier 100;
 
-STORE HundredMinimumCostSupplier into '$output/Q2_out' USING PigStorage(' ');
+STORE HundredMinimumCostSupplier into '$output/Q2_out' USING PigStorage('|');

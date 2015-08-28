@@ -24,4 +24,4 @@ sumResult = foreach grResult generate flatten(group), SUM(sell1.volume) as reven
 sortResult = order sumResult by revenue desc, o_orderdate;
 limitResult = limit sortResult 10;
 
-store limitResult into '$output/Q3_out' USING PigStorage(' ');
+store limitResult into '$output/Q3_out' USING PigStorage('|');

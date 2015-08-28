@@ -39,4 +39,4 @@ grResult = group selc1 by n_name;
 sumResult = foreach grResult generate flatten(group), SUM(selc1.eachvalue) as revenue;
 sortResult = order sumResult by revenue desc;
 
-store sortResult into '$output/Q5_out' USING PigStorage(' ');
+store sortResult into '$output/Q5_out' USING PigStorage('|');

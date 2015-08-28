@@ -8,4 +8,4 @@ saving = FOREACH flineitem GENERATE l_extendedprice * l_discount;
 grpResult = GROUP saving ALL;
 sumResult = FOREACH grpResult GENERATE SUM(saving);
 
-store sumResult into '$output/Q6_out' USING PigStorage(' ');
+store sumResult into '$output/Q6_out' USING PigStorage('|');

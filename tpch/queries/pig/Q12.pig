@@ -19,4 +19,4 @@ sumResult = FOREACH grpResult{
 };
 sortResult = ORDER sumResult BY group;
 
-store sortResult into '$output/Q12_out' USING PigStorage(' ');
+store sortResult into '$output/Q12_out' USING PigStorage('|');

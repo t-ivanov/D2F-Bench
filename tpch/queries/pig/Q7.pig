@@ -45,4 +45,4 @@ grouped_shipping = group shipping by (supp_nation, cust_nation, l_year);
 aggregated_shipping = foreach grouped_shipping GENERATE FLATTEN(group), SUM($1.volume) as revenue;
 
 ordered_shipping = order aggregated_shipping by group::supp_nation, group::cust_nation, group::l_year;
-store ordered_shipping into '$output/Q7_out' USING PigStorage(' ');
+store ordered_shipping into '$output/Q7_out' USING PigStorage('|');
