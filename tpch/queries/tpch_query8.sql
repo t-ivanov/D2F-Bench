@@ -1,37 +1,42 @@
-select
-	o_year,
-	sum(case
-		when nation = 'PERU' then volume
-		else 0
-	end) / sum(volume) as mkt_share
-from
-	(
-		select
-			year(o_orderdate) as o_year,
-			l_extendedprice * (1 - l_discount) as volume,
-			n2.n_name as nation
-		from
-			part,
-			supplier,
-			lineitem,
-			orders,
-			customer,
-			nation n1,
-			nation n2,
-			region
-		where
-			p_partkey = l_partkey
-			and s_suppkey = l_suppkey
-			and l_orderkey = o_orderkey
-			and o_custkey = c_custkey
-			and c_nationkey = n1.n_nationkey
-			and n1.n_regionkey = r_regionkey
-			and r_name = 'AMERICA'
-			and s_nationkey = n2.n_nationkey
-			and o_orderdate between '1995-01-01' and '1996-12-31'
-			and p_type = 'ECONOMY BURNISHED NICKEL'
-	) as all_nations
-group by
-	o_year
-order by
-	o_year;
+-- create the result table
+drop table if exists q8_national_market_share;
+create table q8_national_market_share(o_year string, mkt_share double);
+
+-- the query
+insert overwrite table q8_national_market_share 
+select 
+  o_year, sum(case 
+  when nation = 'PERU' then volume 
+  else 0
+  end) / sum(volume) as mkt_share
+from 
+  (
+select 
+  year(o_orderdate) as o_year, 
+  l_extendedprice * (1-l_discount) as volume, 
+  n2.n_name as nation
+    from
+      nation n2 join
+        (select o_orderdate, l_discount, l_extendedprice, s_nationkey 
+         from supplier s join
+          (select o_orderdate, l_discount, l_extendedprice, l_suppkey 
+           from part p join
+             (select o_orderdate, l_partkey, l_discount, l_extendedprice, l_suppkey 
+              from lineitem l join
+                (select o_orderdate, o_orderkey 
+                 from orders o join
+                   (select c.c_custkey 
+                    from customer c join
+                      (select n1.n_nationkey 
+                       from nation n1 join region r
+                       on n1.n_regionkey = r.r_regionkey and r.r_name = 'AMERICA'
+                       ) n11 on c.c_nationkey = n11.n_nationkey
+                    ) c1 on c1.c_custkey = o.o_custkey
+                 ) o1 on l.l_orderkey = o1.o_orderkey and o1.o_orderdate >= '1995-01-01' 
+                         and o1.o_orderdate < '1996-12-31'
+              ) l1 on p.p_partkey = l1.l_partkey and p.p_type = 'ECONOMY BURNISHED NICKEL'
+           ) p1 on s.s_suppkey = p1.l_suppkey
+        ) s1 on s1.s_nationkey = n2.n_nationkey
+  ) all_nation
+group by o_year
+order by o_year;

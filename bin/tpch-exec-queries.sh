@@ -48,7 +48,8 @@ do
 	if [ $ENGINE == "spark-sql" ]
 	then
 	# first have to select the database "use tpch_orc_2sf"
-		spark-sql -i ${HIVE_SETTING} -f ${QUERY_DIR}/tpch_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
+		echo "use ${DATABASE};"|cat - ${QUERY_DIR}/tpch_query${i}.sql > /tmp/tmp_query${i}.sql
+		spark-sql -i ${HIVE_SETTING} -f /tmp/tmp_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
 	elif [ $ENGINE == "pig" ]
 	then
 		#execute pig queires

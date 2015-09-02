@@ -1,52 +1,63 @@
-drop view q2_min_ps_supplycost;
-create view q2_min_ps_supplycost as
-select
-	p_partkey as min_p_partkey,
-	min(ps_supplycost) as min_ps_supplycost
-from
-	part,
-	partsupp,
-	supplier,
-	nation,
-	region
-where
-	p_partkey = ps_partkey
-	and s_suppkey = ps_suppkey
-	and s_nationkey = n_nationkey
-	and n_regionkey = r_regionkey
-	and r_name = 'EUROPE'
-group by
-	p_partkey;
+-- prepare
+-- create result tables
+drop table if exists q2_minimum_cost_supplier_tmp1;
+create table q2_minimum_cost_supplier_tmp1 (s_acctbal double, s_name string, n_name string, p_partkey int, ps_supplycost double, p_mfgr string, s_address string, s_phone string, s_comment string);
+drop table if exists q2_minimum_cost_supplier_tmp2;
+create table q2_minimum_cost_supplier_tmp2 (p_partkey int, ps_min_supplycost double);
+drop table if exists q2_minimum_cost_supplier;
+create table q2_minimum_cost_supplier (s_acctbal double, s_name string, n_name string, p_partkey int, p_mfgr string, s_address string, s_phone string, s_comment string);
 
-select
-	s_acctbal,
-	s_name,
-	n_name,
-	p_partkey,
-	p_mfgr,
-	s_address,
-	s_phone,
-	s_comment
-from
-	part,
-	supplier,
-	partsupp,
-	nation,
-	region,
-	q2_min_ps_supplycost
-where
-	p_partkey = ps_partkey
-	and s_suppkey = ps_suppkey
-	and p_size = 37
-	and p_type like '%COPPER'
-	and s_nationkey = n_nationkey
-	and n_regionkey = r_regionkey
-	and r_name = 'EUROPE'
-	and ps_supplycost = min_ps_supplycost
-	and p_partkey = min_p_partkey
-order by
-	s_acctbal desc,
-	n_name,
-	s_name,
-	p_partkey
+-- the query
+insert overwrite table q2_minimum_cost_supplier_tmp1 
+select 
+  s.s_acctbal, 
+  s.s_name, 
+  n.n_name, 
+  p.p_partkey, 
+  ps.ps_supplycost, 
+  p.p_mfgr, 
+  s.s_address, 
+  s.s_phone, 
+  s.s_comment 
+from 
+  nation n join region r 
+  on 
+    n.n_regionkey = r.r_regionkey and r.r_name = 'EUROPE' 
+  join supplier s 
+  on 
+s.s_nationkey = n.n_nationkey 
+  join partsupp ps 
+  on  
+s.s_suppkey = ps.ps_suppkey 
+  join part p 
+  on 
+    p.p_partkey = ps.ps_partkey 
+and 
+p.p_size = 37 and p.p_type like '%COPPER' ;
+
+insert overwrite table q2_minimum_cost_supplier_tmp2 
+select 
+  p_partkey, min(ps_supplycost) 
+from  
+  q2_minimum_cost_supplier_tmp1 
+group by p_partkey;
+
+insert overwrite table q2_minimum_cost_supplier 
+select 
+  t1.s_acctbal, 
+  t1.s_name, 
+  t1.n_name, 
+  t1.p_partkey, 
+  t1.p_mfgr, 
+  t1.s_address, 
+  t1.s_phone, 
+  t1.s_comment 
+from 
+  q2_minimum_cost_supplier_tmp1 t1 join q2_minimum_cost_supplier_tmp2 t2 
+on 
+  t1.p_partkey = t2.p_partkey 
+and 
+t1.ps_supplycost=t2.ps_min_supplycost 
+order by 
+s_acctbal desc, n_name, s_name, p_partkey 
 limit 100;
