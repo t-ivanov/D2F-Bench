@@ -49,7 +49,7 @@ do
 	then
 	# first have to select the database "use tpch_orc_2sf"
 		echo "use ${DATABASE};"|cat - ${QUERY_DIR}/tpch_query${i}.sql > /tmp/tmp_query${i}.sql
-		spark-sql -i ${HIVE_SETTING} -f /tmp/tmp_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
+		/home/user1/spark/bin/spark-sql -i ${HIVE_SETTING} -f /tmp/tmp_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
 	elif [ $ENGINE == "pig" ]
 	then
 		#execute pig queires
