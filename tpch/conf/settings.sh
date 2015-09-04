@@ -28,8 +28,12 @@ FILE_FORMAT=orc
 DATABASE=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf
 DATABASE_SPARK=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf
 
-# Number of queries to execute in TPC-H --> 22 for all, or space separated list
-NUM_QUERIES=22
+# Number of queries to execute in TPC-H --> 
+# hive - space separated 22 queries list
+TEST_QUERIES="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22"
+# spark sql - 20 queries without Q11 and Q17
+#TEST_QUERIES="1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 18 19 20 21 22"
+
 
 # Pig specific params
 PIG_INPUT_DIR=/user/hive/warehouse/${DATABASE}

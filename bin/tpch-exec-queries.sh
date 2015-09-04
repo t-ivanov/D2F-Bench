@@ -31,8 +31,10 @@ fi
 
 
 HOSTFILE=$BENCH_HOME/bin/hostlist
-i=1
-while [ $i -le $NUM_QUERIES ]
+#i=1
+#while [ $i -le $NUM_QUERIES ]
+
+for i in ${TEST_QUERIES}
 do
 	if [ $HOSTFILE != "" ]
 	then
@@ -76,5 +78,5 @@ do
 
 	
 	#i=$(( i+1 ))	
-	i=`expr $i + 1`
+	#i=`expr $i + 1`
 done

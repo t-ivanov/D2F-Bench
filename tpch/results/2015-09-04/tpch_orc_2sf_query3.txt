@@ -1,0 +1,116 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+
+Logging initialized using configuration in file:/etc/hive/2.3.0.0-2557/0/hive-log4j.properties
+OK
+Time taken: 1.172 seconds
+Query ID = root_20150904102858_ad10c89c-c5ea-4544-99d6-c14fd401e52c
+Total jobs = 6
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20150904102858_ad10c89c-c5ea-4544-99d6-c14fd401e52c.log
+2015-09-04 10:29:11	Starting to launch local task to process map join;	maximum memory = 255328256
+2015-09-04 10:29:12	Dump the side-table for tag: 0 with group count: 60359 into file: file:/tmp/root/4e246d40-d976-4bc1-8741-2470024b2051/hive_2015-09-04_10-28-58_369_3285684589964296535-1/-local-10011/HashTable-Stage-10/MapJoin-mapfile20--.hashtable
+2015-09-04 10:29:13	Uploaded 1 File to: file:/tmp/root/4e246d40-d976-4bc1-8741-2470024b2051/hive_2015-09-04_10-28-58_369_3285684589964296535-1/-local-10011/HashTable-Stage-10/MapJoin-mapfile20--.hashtable (1550515 bytes)
+2015-09-04 10:29:13	End of local task; Time Taken: 1.954 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 6
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1441360224149_0011, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1441360224149_0011/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1441360224149_0011
+Hadoop job information for Stage-10: number of mappers: 1; number of reducers: 0
+2015-09-04 10:29:19,301 Stage-10 map = 0%,  reduce = 0%
+2015-09-04 10:29:26,601 Stage-10 map = 100%,  reduce = 0%, Cumulative CPU 4.73 sec
+MapReduce Total cumulative CPU time: 4 seconds 730 msec
+Ended Job = job_1441360224149_0011
+Stage-11 is filtered out by condition resolver.
+Stage-12 is selected by condition resolver.
+Stage-2 is filtered out by condition resolver.
+WARNING: Use "yarn jar" to launch YARN applications.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.3.0.0-2557/spark/lib/spark-assembly-1.3.1.2.3.0.0-2557-hadoop2.7.1.2.3.0.0-2557.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+Execution log at: /tmp/root/root_20150904102858_ad10c89c-c5ea-4544-99d6-c14fd401e52c.log
+2015-09-04 10:29:30	Starting to launch local task to process map join;	maximum memory = 255328256
+2015-09-04 10:29:33	Processing rows:	200000	Hashtable size:	199999	Memory usage:	101238400	percentage:	0.397
+2015-09-04 10:29:33	Dump the side-table for tag: 0 with group count: 296144 into file: file:/tmp/root/4e246d40-d976-4bc1-8741-2470024b2051/hive_2015-09-04_10-28-58_369_3285684589964296535-1/-local-10009/HashTable-Stage-8/MapJoin-mapfile10--.hashtable
+2015-09-04 10:29:34	Uploaded 1 File to: file:/tmp/root/4e246d40-d976-4bc1-8741-2470024b2051/hive_2015-09-04_10-28-58_369_3285684589964296535-1/-local-10009/HashTable-Stage-8/MapJoin-mapfile10--.hashtable (13554599 bytes)
+2015-09-04 10:29:34	End of local task; Time Taken: 3.452 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 3 out of 6
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1441360224149_0012, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1441360224149_0012/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1441360224149_0012
+Hadoop job information for Stage-8: number of mappers: 1; number of reducers: 0
+2015-09-04 10:29:40,776 Stage-8 map = 0%,  reduce = 0%
+2015-09-04 10:29:54,247 Stage-8 map = 50%,  reduce = 0%, Cumulative CPU 13.46 sec
+2015-09-04 10:29:59,432 Stage-8 map = 100%,  reduce = 0%, Cumulative CPU 20.09 sec
+MapReduce Total cumulative CPU time: 20 seconds 90 msec
+Ended Job = job_1441360224149_0012
+Launching Job 4 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1441360224149_0013, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1441360224149_0013/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1441360224149_0013
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2015-09-04 10:30:07,477 Stage-3 map = 0%,  reduce = 0%
+2015-09-04 10:30:13,761 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 2.28 sec
+2015-09-04 10:30:18,965 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 5.1 sec
+MapReduce Total cumulative CPU time: 5 seconds 100 msec
+Ended Job = job_1441360224149_0013
+Launching Job 5 out of 6
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1441360224149_0014, Tracking URL = http://sandbox.hortonworks.com:8088/proxy/application_1441360224149_0014/
+Kill Command = /usr/hdp/2.3.0.0-2557/hadoop/bin/hadoop job  -kill job_1441360224149_0014
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2015-09-04 10:30:26,009 Stage-4 map = 0%,  reduce = 0%
+2015-09-04 10:30:31,200 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.94 sec
+2015-09-04 10:30:37,414 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 3.28 sec
+MapReduce Total cumulative CPU time: 3 seconds 280 msec
+Ended Job = job_1441360224149_0014
+MapReduce Jobs Launched: 
+Stage-Stage-10: Map: 1   Cumulative CPU: 4.73 sec   HDFS Read: 13079852 HDFS Write: 12127907 SUCCESS
+Stage-Stage-8: Map: 1   Cumulative CPU: 20.09 sec   HDFS Read: 96191439 HDFS Write: 957357 SUCCESS
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 5.1 sec   HDFS Read: 962947 HDFS Write: 957357 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 3.28 sec   HDFS Read: 962550 HDFS Write: 368 SUCCESS
+Total MapReduce CPU Time Spent: 33 seconds 200 msec
+OK
+9806272	411726.10640000005	1995-03-13	0
+7476544	406712.06039999996	1995-03-21	0
+11982337	401634.95369999995	1995-02-15	0
+4178471	401044.97669999994	1995-02-28	0
+6474405	400417.0632	1995-03-01	0
+9431303	399554.2284	1995-03-18	0
+10671716	395659.8955	1995-02-28	0
+8210311	393017.059	1995-02-23	0
+11249635	392460.49539999996	1995-02-23	0
+11139108	389804.9237	1995-02-23	0
+Time taken: 100.144 seconds, Fetched: 10 row(s)
