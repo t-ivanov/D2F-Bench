@@ -1,8 +1,8 @@
 #!/bin/bash
 
-
 # set home path
-export BENCH_HOME=$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd );
+BENCH_HOME=$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd );
+#export $BENCH_HOME;
 echo "\$BENCH_HOME is set to $BENCH_HOME";
 
 # Check for all the stuff I need to function.

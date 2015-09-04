@@ -29,7 +29,8 @@ from (
 		part_value,
 		total_value
 	from
-		q11_part_tmp_cached join q11_sum_tmp_cached
+		q11_part_tmp_cached 
+	join q11_sum_tmp_cached
 ) a
 where
 	part_value > total_value * 0.0001

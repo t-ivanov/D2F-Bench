@@ -18,21 +18,22 @@ DIR=
 BUCKETS=13
 
 # Execution engine: hive, pig, spark-sql etc.
-ENGINE=pig
+ENGINE=hive
 
 # Data file format for storing the table data in Hive 
 # Supported formats are: ORC, RCfile, Parquet, Avro, SequenceFile, TextFile 
 FILE_FORMAT=orc
 
 # Name of the database in Metastore
-DATABASE=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf.db
+DATABASE=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf
+DATABASE_SPARK=${BENCHMARK}_${FILE_FORMAT}_${SCALE}sf
 
 # Number of queries to execute in TPC-H --> 22 for all, or space separated list
 NUM_QUERIES=22
 
 # Pig specific params
-PIG_INPUT_DIR=/apps/hive/warehouse/${DATABASE}
-PIG_OUTPUT_DIR=/apps/hive/warehouse
+PIG_INPUT_DIR=/user/hive/warehouse/${DATABASE}
+PIG_OUTPUT_DIR=/user/hive/warehouse
 
 # Ths ssh options
 #SSH_OPTS="-o StrictHostKeyChecking=no -o ServerAliveInterval=30"

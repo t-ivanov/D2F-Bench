@@ -47,9 +47,11 @@ do
 	# Execute query
 	if [ $ENGINE == "spark-sql" ]
 	then
+	# set the spark-sql resource parameters
+	SPARKSQL_PARAMS="-v --driver-memory 10g --executor-memory 9g --executor-cores 3 --num-executors 9 --master yarn"
 	# first have to select the database "use tpch_orc_2sf"
-		echo "use ${DATABASE};"|cat - ${QUERY_DIR}/tpch_query${i}.sql > /tmp/tmp_query${i}.sql
-		/home/user1/spark/bin/spark-sql -i ${HIVE_SETTING} -f /tmp/tmp_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
+		echo "use ${DATABASE_SPARK};"|cat - ${QUERY_DIR}/tpch_query${i}.sql > /tmp/tmp_query${i}.sql
+		/home/user1/spark/bin/spark-sql ${SPARKSQL_PARAMS} -i ${HIVE_SETTING} -f /tmp/tmp_query${i}.sql > ${RESULT_DIR}/${DATABASE}_query${i}.txt 2>&1
 	elif [ $ENGINE == "pig" ]
 	then
 		#execute pig queires
