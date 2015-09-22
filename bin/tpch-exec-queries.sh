@@ -29,6 +29,14 @@ if [ ! -w "$LOG_FILE_EXEC_TIMES" ]
     return 1
 fi
 
+# add additional view tables for Impala
+if [ $ENGINE == "impala" ]
+	then
+	# create the view tables
+	impala-shell -i $IMPALA_NODE:21000 -q "INVALIDATE METADATA;"
+	impala-shell -i $IMPALA_NODE:21000 -d $DATABASE -f $BENCH_HOME/$BENCHMARK/ddl/prepare_table_schema_impala.sql
+fi
+
 
 HOSTFILE=$BENCH_HOME/bin/hostlist
 #i=1
@@ -45,7 +53,8 @@ do
 	# Measure time for query execution time
 	# Start timer to measure data loading for the file formats
 	STARTDATE="`date +%Y/%m/%d:%H:%M:%S`"
-	STARTDATE_EPOCH="`date +%s`" # seconds since epoch
+	STARTDATE_EPOCH="`date +%s`" # seconds since epochstart
+	
 	# Execute query
 	if [ $ENGINE == "spark-sql" ]
 	then
@@ -61,6 +70,11 @@ do
 		hadoop fs -rmr "$PIG_OUTPUT_DIR/Q${i}_out"
 		echo "Running Pig Query Q$i"
 		pig -param input=${PIG_INPUT_DIR} -param output=${PIG_OUTPUT_DIR}  -f ${QUERY_DIR}/pig/Q${i}.pig > ${RESULT_DIR}/${DATABASE}_pig_Q${i}.txt 2>&1
+	elif [ $ENGINE == "impala" ]
+	then
+		# execute impala queries 
+		echo "Running Impala Query Q$i"
+		impala-shell -i $IMPALA_NODE:21000 -d $DATABASE -f ${QUERY_DIR}/impala/Q${i}.impala > ${RESULT_DIR}/${DATABASE}_pig_Q${i}.txt 2>&1
 	else
 		#default engine is hive
 		ENGINE=hive
@@ -80,3 +94,6 @@ do
 	#i=$(( i+1 ))	
 	#i=`expr $i + 1`
 done
+
+# clear the Hadoop logs
+#  hadoop fs -rm -R -skipTrash /tmp/hive-root/*
