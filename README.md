@@ -21,7 +21,7 @@
 
 Edit the `~/D2F-Bench/tpch/conf/settings.sh` file: 
 * __TABLES="part partsupp supplier customer orders lineitem nation region"__ -- defines which tables to use for the tests. This should not be changed unless you are testing any new functionality.
-* __SCALE=1__ -- defines the scale factor for the data generation phase. (0.1= 100MB, 0.5=500MB, 1 = 1GB, 2=2GB ... 1000=1TB).
+* __SCALE=2__ -- defines the scale factor for the data generation phase. (2=2GB, 3=3GB ... 1000=1TB).
 You need to decide on a "Scale Factor" which represents how much data you will generate. Scale Factor roughly translates to gigabytes, so a Scale Factor of 100 is about 100 gigabytes and one terabyte is Scale Factor 1000. Decide how much data you want and keep it in mind for the next step. If you have a cluster of 4-10 nodes or just want to experiment at a smaller scale, scale 1000 (1 TB) of data is a good starting point. If you have a large cluster, you may want to choose Scale 10000 (10 TB) or more.
 
 * __ENGINE=hive__ -- set the execution engine with which you want to run the benchmark. Supported are hive, pig, spark-sql, impala.
