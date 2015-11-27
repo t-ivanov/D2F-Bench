@@ -11,11 +11,11 @@
 
 1.Create a copy of the project locally:
 
-_git clone https://github.com/t-ivanov/D2F-Bench_
+`git clone https://github.com/t-ivanov/D2F-Bench`
 
 2.Download, compile and package the appropriate TPC-H data generator by executing:
 
-_./tpch-build.sh_
+`./tpch-build.sh`
 
 3.Adjust the benchmark settings according to your needs.
 
@@ -32,11 +32,11 @@ There are additional parameters which are engine specific and are curently in te
 
 4.Generate and load the data by executing (under root):
 
-_sudo ./tpch-setup.sh_
+`sudo ./tpch-setup`
 
 5.Execute the queries specified in the __TEST_QUERIES__ list:
 
-_./tpch-exec-queries.sh_
+`./tpch-exec-queries.sh`
 
 6.Results from the query runs are stored in folder __~/D2F-Bench/tpch/results/[Current-date]/[database_name_query_number].txt__. Additionally, in the file __~/D2F-Bench/tpch/logs/query_times.csv__ are stored all query times from the latest executions.
 
