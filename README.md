@@ -32,7 +32,7 @@ There are additional parameters which are engine specific and are curently in te
 
 4.Generate and load the data by executing (under root):
 
-`sudo ./tpch-setup`
+`sudo ./tpch-setup.sh`
 
 5.Execute the queries specified in the __TEST_QUERIES__ list:
 
