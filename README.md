@@ -5,6 +5,7 @@
 * Apache Hadoop 2.2 or later  / Cloudera CDH / HortonWorks HDP 
 * Apache Hive version 13 or later
 * Between 15 minutes and 2 days to generate data (depending on the Scale Factor you choose and available hardware).
+* [Supported engines](https://github.com/t-ivanov/D2F-Bench/blob/master/engines.md): Hive, Spark SQL, Impala, Pig
 
 
 ## Install & Setup TPC-H
